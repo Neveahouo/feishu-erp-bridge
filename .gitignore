@@ -1,0 +1,37 @@
+# ===== 配置与凭证（绝不能入库）=====
+config.py
+secrets/
+*.cookie
+*.token
+.env
+.env.*
+
+# ===== 运行时数据 =====
+data/
+*.log
+*.json
+!package.json
+!tsconfig.json
+
+# ===== 生成的文档与模板 =====
+# 模板来自业务系统，通常不允许公开分发；请自行放置
+templates/*.xlsx
+templates/*.xls
+*.xlsx
+*.xls
+!docs/**/*.xlsx
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# ===== 编辑器 / 系统 =====
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
